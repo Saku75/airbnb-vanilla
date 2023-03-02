@@ -1,0 +1,56 @@
+main {
+	max-width: 1200px;
+}
+
+.content {
+	min-height: 100vh;
+
+	padding: 2rem 0;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+#list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 1rem;
+}
+
+.card {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+
+	img {
+		width: 100%;
+		aspect-ratio: 1/1;
+
+		object-fit: cover;
+	}
+
+	div {
+		width: 100%;
+		height: 70px;
+
+		padding: 0 1.5rem;
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		background-color: #cef9ff;
+
+		img {
+			width: 1.5rem;
+			aspect-ratio: 1/1;
+		}
+	}
+}
